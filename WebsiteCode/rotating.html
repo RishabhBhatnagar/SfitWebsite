@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#w{
+			background-image: "summit.png";
+			animation anim 8s infinite;
+		}
+		@-webkit-keyframes anim{
+			from{
+				background-size: 0px 0px;
+			}
+			to{
+				background-size: 150px 150px;
+			}
+		}
+		@keyframes anim{
+			from{
+				background-size: 0px 0px;
+			}
+			to{
+				background-size: 150px 150px;
+			}
+		}
+		#r{
+			width: 150px;
+			height: 150px;
+			border: 5px dashed purple;
+			border-radius:50%;
+			border-spacing: 5px;
+		}
+		#r:hover{
+			transform: rotate(-360000deg);
+			transition: transform 600s ease;
+		}
+		#s{
+			
+			width: 150px;
+			height: 150px;
+			border: 5px dashed purple;
+			border-radius:50%;
+			border-spacing: 5px;
+		}
+		#s:hover{
+			transform:rotateZ(360000deg);
+			transition: transform 400s ease;
+		}
+	</style>
+</head>
+<body bgcolor="black">
+<div id="r"></div>
+<img style="width: 300px;height:300px" id="s" src="summit.png"></div>
+<div>yyyyy</div>
+</body>
+</html>
